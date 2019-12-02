@@ -67,7 +67,7 @@ https://picpick.app/ko/start?download=kr
 
 https://docs.microsoft.com/en-us/windows/wsl/wsl2-install
 
-기본 윈도우10 설치하면 빌드가 1803. 근데 wsl2 사용하려면 18383 ??  어쨌든 preview 버전 신청해서 테스트보드 되어야함.
+기본 윈도우10 설치하면 빌드가 18363.x 근데 wsl2 사용하려면 18383.??  어쨌든 훨 높아야 하는데 업데으로 갈 수 있는 한계가 있음. 그래서 preview 버전 신청해서 테스트보드 windows 되어야함.
 
 # Linux Ubuntu
 
