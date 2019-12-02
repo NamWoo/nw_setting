@@ -59,6 +59,16 @@ Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
 
 
 
+## 픽픽
+
+https://picpick.app/ko/start?download=kr
+
+##  WSL2
+
+https://docs.microsoft.com/en-us/windows/wsl/wsl2-install
+
+기본 윈도우10 설치하면 빌드가 1803. 근데 wsl2 사용하려면 18383 ??  어쨌든 preview 버전 신청해서 테스트보드 되어야함.
+
 # Linux Ubuntu
 
 18.04
