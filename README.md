@@ -165,11 +165,26 @@ git push -u origin master
 Set-Alias gg D:\myCOM\nw_setting\alias_00.ps1
 ```
 
-`gg` 명령어를 넣으면 `D:\myCOM\nw_setting\alias_00.ps1` 이 위치에 이 파일을 실행하자~~~
+`gg` 명령어를 넣으면 `D:\myCOM\nw_setting\alias_00.ps1` 이 위치에 이 파일을 실행하자 라는 말
 
-그럼 잘 된다~
+잘 되는걸 확인할 수 있다
 
 ![](./img/20191204-002.png)
+
+이제 이걸 매번 powershell 실행시 기본등록 해주게끔 설정
+
+```powershell
+notepad.exe $PROFILE
+```
+
+열고 맨 밑에 위에 명령어 넣기
+
+```$PROFILE
+Set-Alias gg D:\myCOM\nw_setting\alias_00.ps1
+```
+
+
+
 
 
 > 근데 생각해보니까 그냥 vscode에 git 확장모듈 깔아놓으면 그냥 버튼 한번이면 되는거 아니었?................
