@@ -1,5 +1,18 @@
 * nw_setting
-* 나만의 컴퓨터 셋팅
+* windows 10 에서 나만의 컴퓨터 셋팅
+
+|||
+|:---:|:---|
+|ps|[chocolatey--git](#installing-chocolatey--git)|
+|ps|[oh-my-posh](#oh-my-posh)|
+|ps|[alias-setting](#alias-setting)|
+|ps|[wsl2](#wsl2)|
+
+
+
+
+
+
 
 
 # Windows 10
@@ -14,6 +27,72 @@
 ```powershell
 get-host
 ```
+
+
+
+### Installing Chocolatey & git
+
+
+* https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell
+
+
+gitbash 불편함 해소하고 설치 오류 해소하기 위해 coocolatey로 git 설치하기
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+choco install git -y
+```
+
+
+
+### oh-my-posh
+
+* https://medium.com/rkttu/use-windows10-open-ssh-tips-e6e9c77de433
+
+powershell 멋지게 셋팅하기
+
+하고 나면 이렇게됨
+
+![](./img/20191204-001.png)
+
+
+
+```powershell
+Install-Module posh-git -Scope CurrentUser
+Install-Module oh-my-posh -Scope CurrentUser
+```
+
+안되면 이거
+```powershell
+Install-Module PowerShellGet -Force -SkipPublisherCheck
+```
+
+
+시작시 자동시작 셋팅
+```powershell
+if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
+notepad.exe $PROFILE
+```
+
+스크립트에 입력
+```text notepad
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-Theme Paradox
+```
+
+설정 마무리
+
+```powershell
+Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy RemoteSigned -Force
+```
+
+```powershell
+Install-Module posh-git -Scope CurrentUser -Force
+Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
+```
+
+
 
 
 ### alias setting
@@ -93,67 +172,8 @@ Set-Alias gg D:\myCOM\nw_setting\alias_00.ps1
 ![](./img/20191204-002.png)
 
 
-### Installing Chocolatey & git
+> 근데 생각해보니까 그냥 vscode에 git 확장모듈 깔아놓으면 그냥 버튼 한번이면 되는거 아니었?................
 
-
-* https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell
-
-
-gitbash 불편함 해소하고 설치 오류 해소하기 위해 coocolatey로 git 설치하기
-
-```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-choco install git -y
-```
-
-
-
-### oh-my-posh
-
-* https://medium.com/rkttu/use-windows10-open-ssh-tips-e6e9c77de433
-
-powershell 멋지게 셋팅하기
-
-하고 나면 이렇게됨
-
-![](./img/20191204-001.png)
-
-
-
-```powershell
-Install-Module posh-git -Scope CurrentUser
-Install-Module oh-my-posh -Scope CurrentUser
-```
-
-안되면 이거
-```powershell
-Install-Module PowerShellGet -Force -SkipPublisherCheck
-```
-
-
-시작시 자동시작 셋팅
-```powershell
-if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
-notepad.exe $PROFILE
-```
-
-스크립트에 입력
-```text notepad
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-Theme Paradox
-```
-
-설정 마무리
-
-```powershell
-Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy RemoteSigned -Force
-```
-
-```powershell
-Install-Module posh-git -Scope CurrentUser -Force
-Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
-```
 
 
 ## PICKPICK
@@ -166,6 +186,8 @@ https://docs.microsoft.com/en-us/windows/wsl/wsl2-install
 
 기본 윈도우10 설치하면 빌드가 18363.x 근데 wsl2 사용하려면 18383.??  어쨌든 훨 높아야 하는데 업데으로 갈 수 있는 한계가 있음. 그래서 preview 버전 신청해서 테스트보드 windows 되어야함.
 
+TODO
+다른 깃에 있는 설정법 옮겨넣기
 
 
 
