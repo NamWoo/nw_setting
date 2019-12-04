@@ -64,16 +64,33 @@ git push -u origin master
 
 원하는 `git repo`에 `.git`이 있는 위치로 현재 폴더 위치 이동시킨 후 `add` `commit` `push` 차례로 실행
 
+이렇게 하고 저장한 뒤에 먼저 컴퓨터에 *git config 작성해 넣어야 함.*
+
+```bash
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+```
+
+이제 테스트 삼아 아까 만들어 놓은 `.ps1` 파일을 실행해보기 위해서 
+
+```powershell
+./alias_00.ps1
+```
+
+실행해보면 이상없이 잘 될꺼임.
+
+이제 이걸 alias로 setting해서 넣기위해 
 
 
+```powershell
+Set-Alias gg D:\myCOM\nw_setting\alias_00.ps1
+```
 
+`gg` 명령어를 넣으면 `D:\myCOM\nw_setting\alias_00.ps1` 이 위치에 이 파일을 실행하자~~~
 
+그럼 잘 된다~
 
-
-
-
-
-
+![](./img/20191204-002.png)
 
 
 ### Installing Chocolatey & git
