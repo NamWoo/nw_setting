@@ -201,6 +201,31 @@ https://docs.microsoft.com/en-us/windows/wsl/wsl2-install
 
 기본 윈도우10 설치하면 빌드가 18363.x 근데 wsl2 사용하려면 18383.??  어쨌든 훨 높아야 하는데 업데으로 갈 수 있는 한계가 있음. 그래서 preview 버전 신청해서 테스트보드 windows 되어야함.
 
+ 오늘자로 windows 10 version 1903로 업뎃 됐기에 이제 잘 될꺼임
+ 
+ 가상환경
+ 
+* Ubuntu 16.04 LTS
+* [Ubuntu 18.04 LTS](https://docs.microsoft.com/en-us/windows/wsl/install-win10#install-your-linux-distribution-of-choice) 나는 요고
+* OpenSUSE Leap 15
+* OpenSUSE Leap 42
+* SUSE Linux Enterprise Server 12
+* SUSE Linux Enterprise Server 15
+* Kali Linux
+* Debian GNU/Linux
+* Fedora Remix for WSL
+* Pengwin
+* Pengwin Enterprise
+* Alpine WSL
+  
+ 
+ 
+
+
+
+
+
+
 TODO
 다른 깃에 있는 설정법 옮겨넣기
 
