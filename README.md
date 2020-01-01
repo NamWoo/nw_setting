@@ -225,6 +225,13 @@ https://docs.microsoft.com/en-us/windows/wsl/wsl2-install
 
 
 
+## 
+
+```shell
+Microsoft Windows [Version 10.0.14393]                                                                                  (c) 2016 Microsoft Corporation. All rights reserved.                                                                                                                                                                                            C:\Windows\system32>powercfg -h off                                                                                                                                                                                                             C:\Windows\system32>dism /online /cleanup-image /spsuperseded                                                                                                                                                                                   배포 이미지 서비스 및 관리 도구                                                                                         버전: 10.0.14393.0                                                                                                                                                                                                                              이미지 버전: 10.0.14393.0                                                                                                                                                                                                                       서비스 팩 정리 작업을 계속할 수 없습니다. 서비스 팩 백업 파일을 찾을 수 없습니다.                                       작업을 완료했습니다.                                                                                                                                                                                                                            C:\Windows\system32>  
+```
+
+
 
 TODO
 다른 깃에 있는 설정법 옮겨넣기
