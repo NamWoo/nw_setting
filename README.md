@@ -235,6 +235,6 @@ Microsoft Windows [Version 10.0.14393]                                          
 
 TODO
 다른 깃에 있는 설정법 옮겨넣기
-
+!!s
 
 
