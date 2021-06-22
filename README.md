@@ -47,6 +47,7 @@ choco install git -y
 
 ### oh-my-posh
 
+* https://github.com/ohmyzsh/ohmyzsh
 * https://medium.com/rkttu/use-windows10-open-ssh-tips-e6e9c77de433
 
 powershell 멋지게 셋팅하기
