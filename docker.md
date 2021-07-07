@@ -1,6 +1,7 @@
 
 ### 멈추기 
 
+```
 docker container run -d -p 9000:8080 example/echo:latest
 afsafasfasfaf
 docker container stop afsafasfasfaf
@@ -8,15 +9,17 @@ docker container stop afsafasfasfaf
 
 docker container run -t -d --name echo example/echo:latest
 docker container stop echo
-
+```
 
 ### 재시작
 
+```
 docker container restart echo
-
+```
 
 ### 파기
 
+```
 docker container rm echo
 
 정지상태에서도 정지 시점 상태 유지한채 디스크에 남기 때문에 같은 이름을 가진 기존 컨테이너 삭제 해야함
@@ -24,7 +27,7 @@ docker container rm echo
 현재 실행중인 컨테이너는 -f 
 
 docker container rm -f echo
-
+```
 
 #### 자동파기
 
