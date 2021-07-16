@@ -1,4 +1,25 @@
 
+
+
+# docker-kaggle
+
+
+원래 도커에 jupyter 포트가 8080이지만 nvidia omniverse가 8080을 쓰고 있으니 피해서 8081로 설정
+
+
+```
+docker run --runtime nvidia -v /home/nw/Documents/kaggle/MLB:/MLB -p 8081:8081 --rm -it --gpus all gcr.io/kaggle-gpu-images/python /bin/bash
+
+#port 8080 을 8081 로 바꾸고
+vi /opt/jupyter/.jupyter/jupyter_notebook_config.py 
+
+#kaggle 개인설정 api 파일을 넣어주면 터미널 kaggle 명령 가능
+cp /MLB/kaggle.json /root/.kaggle
+```
+
+#
+
+
 ### 멈추기 
 
 ```
